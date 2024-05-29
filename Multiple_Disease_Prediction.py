@@ -46,46 +46,46 @@ if (selected == "Allergy, Cold, Covid or Flu Detection"):
 
     col1, col2, col3, col4 = st.columns(4)
 
-    with col1:
-        COUGH = st.text_input("Are you Coughing? 1 = Yes and 0 = No")
+   with col1:
+        COUGH = st.number_input("Are you Coughing? 1 = Yes and 0 = No", min_value=0, max_value=1)
     with col2:
-        MUSCLE_ACHES = st.text_input("Experiencing Muscle-Aches? (1 = 'Yes' and 0 = 'No')")
+        MUSCLE_ACHES = st.number_input("Experiencing Muscle-Aches? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col3:
-        TIREDNESS = st.text_input("Having a feeling of Tiredness? (1 = 'Yes' and 0 = 'No')")  
+        TIREDNESS = st.number_input("Having a feeling of Tiredness? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col4:
-        SORE_THROAT = st.text_input("Having a Sore Throat? (1 = 'Yes' and 0 = 'No')")
+        SORE_THROAT = st.number_input("Having a Sore Throat? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col1:
-        RUNNY_NOSE = st.text_input("Having a Runny Nose (1 = 'Yes' and 0 = 'No')")
+        RUNNY_NOSE = st.number_input("Having a Runny Nose (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col2:
-        STUFFY_NOSE = st.text_input("Having a Stuffy Nose? (1 = 'Yes' and 0 = 'No')")
+        STUFFY_NOSE = st.number_input("Having a Stuffy Nose? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col3:
-        FEVER = st.text_input("Experiencing Fever? (1 = 'Yes' and 0 = 'No')")
+        FEVER = st.number_input("Experiencing Fever? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col4:
-        NAUSEA = st.text_input("Feeling Nausea? (1 = 'Yes' and 0 = 'No')")
+        NAUSEA = st.number_input("Feeling Nausea? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col1:
-        VOMITING = st.text_input("Vommiting? (1 = 'Yes' and 0 = 'No')")
+        VOMITING = st.number_input("Vomiting? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col2:
-        DIARRHEA = st.text_input("Experiencing Diarrhea? (1 = 'Yes and 0 = 'No')")
+        DIARRHEA = st.number_input("Experiencing Diarrhea? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col3:
-        SHORTNESS_OF_BREATH = st.text_input("Experiencing Shortness of Breath? (1 = 'Yes and 0 = 'No')")  
+        SHORTNESS_OF_BREATH = st.number_input("Experiencing Shortness of Breath? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col4:
-        DIFFICULTY_BREATHING = st.text_input("Having Really Difficulty Breathing? (1 = 'Yes' and 0 = 'No')")
+        DIFFICULTY_BREATHING = st.number_input("Having Really Difficulty Breathing? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col1:
-        LOSS_OF_TASTE = st.text_input("Lost a Sense of Taste? (1 = 'Yes' and 0 = 'No')")
+        LOSS_OF_TASTE = st.number_input("Lost a Sense of Taste? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col2:
-        LOSS_OF_SMELL = st.text_input("lost a Sense of Smell? (1 = 'Yes' and 0 = 'No')")
+        LOSS_OF_SMELL = st.number_input("Lost a Sense of Smell? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col3:
-        ITCHY_NOSE = st.text_input("Having a Itchy Nose? (1 = 'Yes' and 0 = 'No')")
+        ITCHY_NOSE = st.number_input("Having an Itchy Nose? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col4:
-        ITCHY_EYES = st.text_input("Having Itchy Eyes? (1 = 'Yes' and 0 = 'No')")
+        ITCHY_EYES = st.number_input("Having Itchy Eyes? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col1:
-        ITCHY_MOUTH = st.text_input("Experiencing Itchiness in and around the Mouth? (1 = 'Yes' and 0 = 'No')")
+        ITCHY_MOUTH = st.number_input("Experiencing Itchiness in and around the Mouth? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col2:
-        ITCHY_INNER_EAR = st.text_input("Experiencing Itchiness in the Inner Ear? (1 = 'Yes' and 0 = 'No')")
+        ITCHY_INNER_EAR = st.number_input("Experiencing Itchiness in the Inner Ear? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col3:
-        SNEEZING = st.text_input("Are you Sneezing? (1 = 'Yes' and 0 = 'No')")
+        SNEEZING = st.number_input("Are you Sneezing? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
     with col4:
-        PINK_EYE = st.text_input("Having a Pink Eye? (1 = 'Yes' and 0 = 'No')")
+        PINK_EYE = st.number_input("Having a Pink Eye? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
 
     ACCF_diagnosis = ''
 
