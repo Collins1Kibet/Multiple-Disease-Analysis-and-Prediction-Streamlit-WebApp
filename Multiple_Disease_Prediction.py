@@ -89,18 +89,27 @@ if (selected == "Allergy, Cold, Covid or Flu Detection"):
     ACCF_diagnosis = ''
 
     if st.button('Your Test Results'):
-        allergy_cold_covid_or_Flu_prediction = allergy_cold_covid_or_flu_model.predict([[COUGH, MUSCLE_ACHES, TIREDNESS, SORE_THROAT, RUNNY_NOSE, 
-                                                                                        STUFFY_NOSE, FEVER, NAUSEA, VOMITING, DIARRHEA, SHORTNESS_OF_BREATH, 
-                                                                                        DIFFICULTY_BREATHING, LOSS_OF_TASTE, LOSS_OF_SMELL, ITCHY_NOSE, 
-                                                                                        ITCHY_EYES, ITCHY_MOUTH, ITCHY_INNER_EAR, SNEEZING, PINK_EYE]])
-        if (allergy_cold_covid_or_Flu_prediction[0] == 0):
+        input_data = {
+            'COUGH': COUGH, 'MUSCLE_ACHES': MUSCLE_ACHES, 'TIREDNESS': TIREDNESS, 'SORE_THROAT': SORE_THROAT, 
+            'RUNNY_NOSE': RUNNY_NOSE, 'STUFFY_NOSE': STUFFY_NOSE, 'FEVER': FEVER, 'NAUSEA': NAUSEA, 
+            'VOMITING': VOMITING, 'DIARRHEA': DIARRHEA, 'SHORTNESS_OF_BREATH': SHORTNESS_OF_BREATH, 
+            'DIFFICULTY_BREATHING': DIFFICULTY_BREATHING, 'LOSS_OF_TASTE': LOSS_OF_TASTE, 
+            'LOSS_OF_SMELL': LOSS_OF_SMELL, 'ITCHY_NOSE': ITCHY_NOSE, 'ITCHY_EYES': ITCHY_EYES, 
+            'ITCHY_MOUTH': ITCHY_MOUTH, 'ITCHY_INNER_EAR': ITCHY_INNER_EAR, 'SNEEZING': SNEEZING, 'PINK_EYE': PINK_EYE
+        }
+
+        input_df = pd.DataFrame([input_data], columns=feature_names)
+
+        allergy_cold_covid_or_Flu_prediction = allergy_cold_covid_or_flu_model.predict(input_df)
+
+        if allergy_cold_covid_or_Flu_prediction[0] == 0:
             ACCF_diagnosis = 'The Person has Allergy'
-        elif (allergy_cold_covid_or_Flu_prediction[0] == 1):
+        elif allergy_cold_covid_or_Flu_prediction[0] == 1:
             ACCF_diagnosis = 'The Person has Cold'
-        elif (allergy_cold_covid_or_Flu_prediction[0] == 2):
-            ACCF_diagnosis= 'The Person has Covid-19'
+        elif allergy_cold_covid_or_Flu_prediction[0] == 2:
+            ACCF_diagnosis = 'The Person has Covid-19'
         else:
-            print('The Person has Flu')
+            ACCF_diagnosis = 'The Person has Flu'
 
     st.success(ACCF_diagnosis)
 
