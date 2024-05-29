@@ -3,13 +3,14 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-pwd = os.getcwd()
+working_directory = os.path.dirname(os.path.abspath(__file__))
 
-allergy_cold_covid_or_Flu_Model = pickle.load(open(pwd + "\\Trained_Model_Allergy_Cold_Covid_or_Flu.sav", 'rb'))
-diabetes_model = pickle.load(open(pwd + "\\Trained_Model_Diabetes.sav", "rb"))
-heart_disease_model = pickle.load(open(pwd + "\\Trained_Model_heart_disease.sav", "rb"))
-parkisons_disease_model = pickle.load(open(pwd + "\\Trained_Model_Parkinsons_Disease.sav", 'rb'))
-breast_cancer_model = pickle.load(open(pwd + "\\Trained_Model_Breast_Cancer.sav", "rb"))
+
+allergy_cold_covid_or_Flu_Model = pickle.load(open("working_directory/Trained_Model_Allergy_Cold_Covid_or_Flu.sav", 'rb'))
+diabetes_model = pickle.load(open("working_directory/Trained_Model_Diabetes.sav", "rb"))
+heart_disease_model = pickle.load(open("working_directory/Trained_Model_heart_disease.sav", "rb"))
+parkisons_disease_model = pickle.load(open("working_directory/Trained_Model_Parkinsons_Disease.sav", 'rb'))
+breast_cancer_model = pickle.load(open("working_directory/Trained_Model_Breast_Cancer.sav", "rb"))
 
 
 st.set_page_config(
