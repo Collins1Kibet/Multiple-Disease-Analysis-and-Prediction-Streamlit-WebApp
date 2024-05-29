@@ -13,12 +13,14 @@ diabetes_model_path = os.path.join(working_directory, "Trained_Models", "Trained
 heart_disease_model_path = os.path.join(working_directory, "Trained_Models", "Trained_Model_heart_disease.sav")
 parkisons_disease_model_path = os.path.join(working_directory, "Trained_Models", "Trained_Model_Parkinsons_Disease.sav")
 breast_cancer_model_path = os.path.join(working_directory, "Trained_Models", "Trained_Model_Breast_Cancer.sav")
+feature_names_file_path = os.path.join(working_directory, "Trained_Models", "feature_names.pkl")
 
 allergy_cold_covid_or_flu_model = pickle.load(open(allergy_cold_covid_or_flu_model_path, 'rb'))
 diabetes_model = pickle.load(open(diabetes_model_path, 'rb'))
 heart_disease_model = pickle.load(open(heart_disease_model_path, 'rb'))
 parkisons_disease_model = pickle.load(open(parkisons_disease_model_path, 'rb'))
 breast_cancer_model = pickle.load(open(breast_cancer_model_path, 'rb'))
+feature_names = pickle.load(open(feature_names_file_path, 'rb'))
 
 
 st.set_page_config(
