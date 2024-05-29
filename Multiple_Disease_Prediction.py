@@ -87,7 +87,7 @@ if (selected == "Allergy, Cold, Covid or Flu Detection"):
     ACCF_diagnosis = ''
 
     if st.button('Your Test Results'):
-        allergy_cold_covid_or_Flu_prediction = allergy_cold_covid_or_Flu_Model.predict([[COUGH, MUSCLE_ACHES, TIREDNESS, SORE_THROAT, RUNNY_NOSE, 
+        allergy_cold_covid_or_Flu_prediction = allergy_cold_covid_or_flu_model.predict([[COUGH, MUSCLE_ACHES, TIREDNESS, SORE_THROAT, RUNNY_NOSE, 
                                                                                         STUFFY_NOSE, FEVER, NAUSEA, VOMITING, DIARRHEA, SHORTNESS_OF_BREATH, 
                                                                                         DIFFICULTY_BREATHING, LOSS_OF_TASTE, LOSS_OF_SMELL, ITCHY_NOSE, 
                                                                                         ITCHY_EYES, ITCHY_MOUTH, ITCHY_INNER_EAR, SNEEZING, PINK_EYE]])
