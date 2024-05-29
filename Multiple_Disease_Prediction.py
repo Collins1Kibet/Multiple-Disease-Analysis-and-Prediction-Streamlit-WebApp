@@ -46,7 +46,7 @@ if (selected == "Allergy, Cold, Covid or Flu Detection"):
 
     col1, col2, col3, col4 = st.columns(4)
 
-   with col1:
+    with col1:
         COUGH = st.number_input("Are you Coughing? 1 = Yes and 0 = No", min_value=0, max_value=1)
     with col2:
         MUSCLE_ACHES = st.number_input("Experiencing Muscle-Aches? (1 = 'Yes' and 0 = 'No')", min_value=0, max_value=1)
