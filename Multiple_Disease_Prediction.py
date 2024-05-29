@@ -6,11 +6,17 @@ from streamlit_option_menu import option_menu
 working_directory = os.path.dirname(os.path.abspath(__file__))
 
 
-allergy_cold_covid_or_Flu_Model = pickle.load(open("working_directory/Trained_Model_Allergy_Cold_Covid_or_Flu.sav", 'rb'))
-diabetes_model = pickle.load(open("working_directory/Trained_Model_Diabetes.sav", "rb"))
-heart_disease_model = pickle.load(open("working_directory/Trained_Model_heart_disease.sav", "rb"))
-parkisons_disease_model = pickle.load(open("working_directory/Trained_Model_Parkinsons_Disease.sav", 'rb'))
-breast_cancer_model = pickle.load(open("working_directory/Trained_Model_Breast_Cancer.sav", "rb"))
+allergy_cold_covid_or_flu_model_path = os.path.join(working_directory, "Trained_Model_Allergy_Cold_Covid_or_Flu.sav")
+diabetes_model_path = os.path.join(working_directory, "Trained_Model_Diabetes.sav")
+heart_disease_model_path = os.path.join(working_directory, "Trained_Model_heart_disease.sav")
+parkisons_disease_model_path = os.path.join(working_directory, "Trained_Model_Parkinsons_Disease.sav")
+breast_cancer_model_path = os.path.join(working_directory, "Trained_Model_Breast_Cancer.sav")
+
+allergy_cold_covid_or_flu_model = pickle.load(open(allergy_cold_covid_or_flu_model_path, 'rb'))
+diabetes_model = pickle.load(open(diabetes_model_path, 'rb'))
+heart_disease_model = pickle.load(open(heart_disease_model_path, 'rb'))
+parkisons_disease_model = pickle.load(open(parkisons_disease_model_path, 'rb'))
+breast_cancer_model = pickle.load(open(breast_cancer_model_path, 'rb'))
 
 
 st.set_page_config(
