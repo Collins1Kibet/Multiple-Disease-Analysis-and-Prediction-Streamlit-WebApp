@@ -15,12 +15,16 @@ Sources of the Datasets:
 
 Allergy, Cold, Covid19 or Flu detection:
 https://www.kaggle.com/datasets/walterconway/covid-flu-cold-symptoms
+
 Heart Disease prediction:
 https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset
+
 Diabetes detection:
 https://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset/data
+
 Parkinson's Disease:
 https://www.kaggle.com/datasets/vikasukani/parkinsons-disease-data-set
+
 Breast Cancer: This is from sklearn dataframe
 
 
