@@ -1,7 +1,6 @@
-# Multiple-Disease-Analysis-and-Prediction-Streamlit-Webapp
+# Multiple-Disease-Analysis-and-Prediction
 
-# prediction
-This project seeks to predict diseases based on symptoms.
+This project aims to predict diseases based on symptom features and deploy a web app on Streamlit Cloud.
 
 # Diseases explored include:
 1. Allergy, Cold, Covid-19 and Flu
