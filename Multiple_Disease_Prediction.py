@@ -106,7 +106,7 @@ if (selected == "Allergy, Cold, Covid or Flu Detection"):
             ACCF_diagnosis = 'The Person has Cold'
         elif allergy_cold_covid_or_Flu_prediction[0] == 2:
             ACCF_diagnosis = 'The Person has Covid-19'
-        else:
+        elif allergy_cold_covid_or_Flu_prediction[0] == 3:
             ACCF_diagnosis = 'The Person has Flu'
 
     st.success(ACCF_diagnosis)
