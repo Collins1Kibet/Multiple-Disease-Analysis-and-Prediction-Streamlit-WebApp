@@ -38,6 +38,6 @@ After each dataset was analyzed and a model for each disease prediction was trai
 After modeling, the project is deployed on Streamlit Cloud using Streamlit libraries to make it available for public use.
 
 ### Link to My Webapp:
-[https://cobest-kenya-multiple-disease-analysis-and-prediction-system.streamlit.app/](https://ck-multiple-disease-detection.streamlit.app/)
+https://ck-multiple-disease-detection.streamlit.app/
 
 
