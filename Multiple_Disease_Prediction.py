@@ -22,13 +22,13 @@ feature_names = pickle.load(open(feature_names_file_path, 'rb'))
 
 
 st.set_page_config(
-    page_title="C.K. Multiple Disease Prediction System",
+    page_title="C.K. Multiple Disease Detection System",
     page_icon='🩺',
     layout= 'wide'
 )
 
 with st.sidebar:
-    selected = option_menu(menu_title= "C.K. Multiple Disease Prediction System",
+    selected = option_menu(menu_title= "C.K. Multiple Disease Detection System",
                            options= ['Allergy, Cold, Covid or Flu Detection',
                                      'Diabetes Detection',
                                      'Heart Disease Detection',
